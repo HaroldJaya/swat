@@ -15,6 +15,9 @@ mvnw*
 .springBeans
 .sts4-cache
 
+### Eclipse ###
+/bin/
+
 ### IntelliJ IDEA ###
 .idea
 *.iws
