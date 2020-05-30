@@ -13,7 +13,7 @@
 	<artifactId>swat</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>s1</name>
-	<description>Demo project for Spring Boot</description>
+	<description>Spring Web Application on builtin Tomcat</description>
 
 	<properties>
 		<java.version>11</java.version>
@@ -24,7 +24,12 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
-
+		
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-actuator</artifactId>
+		</dependency>
+		
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
