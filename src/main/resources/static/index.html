@@ -7,7 +7,17 @@
 <body>
 	<h1>My Spring Web App</h1>
 	<ul>
-		<li><a href="s02/hello">Hello Spring</a></li>
+		<li><a href="/s02/hello">Hello Spring</a></li>
+		<li><a href="/s04/hello">Hello Thymeleaf</a></li>
+		<li><a href="/s05/guest?user=">Hello guest /1</a></li>
+		<li><a href="/s05/guest2">Hello guest /2</a></li>
+		<li><a href="/s05/guest3">Hello guest /3</a></li>
 	</ul>
+	<form action="/s06/login" method="post">
+		<label>User: <input value="guest" name="user"></label>
+		<label>Password: <input type="password" value="guest" name="password"></label>
+		<button>Login</button>
+	</form>
+	
 </body>
 </html>
