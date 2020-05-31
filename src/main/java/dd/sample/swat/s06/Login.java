@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 @Controller
 @PropertySource("login.properties")
 public class Login {
-    private static final Logger logger = LoggerFactory.getLogger(Login.class);
+    private static final Logger LOG = LoggerFactory.getLogger(Login.class);
 
     @Value("${admin}")
     private String admin;
@@ -31,7 +31,7 @@ public class Login {
             @RequestParam String user, //
             @RequestParam String password, //
             Model model) {
-        logger.debug("Login attempt for user: " + user);
+        LOG.trace(String.format("Login attempt for %s, %s ", user, password));
 
         model.addAttribute("user", user);
         if (user.equals(admin)) {
