@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="utf-8">
+<title>Regions</title>
+</head>
+<body>
+	<h1>Regions</h1>
+
+	<table>
+		<tr>
+			<th>NAME</th>
+		</tr>
+		<tr th:each="region: ${regions}">
+			<td th:text="${region.name}">Europe</td>
+		</tr>
+	</table>
+
+	<select>
+		<option th:each="region: ${regions}" th:value="${region.id}"
+			th:text="${region.name}">Europe</option>
+	</select>
+
+</body>
+</html>

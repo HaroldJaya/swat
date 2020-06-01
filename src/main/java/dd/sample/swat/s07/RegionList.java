@@ -18,7 +18,8 @@ public class RegionList {
     public String list(Model model) {
         LOG.trace("listing all regions");
 
-        System.out.println(repo.count());
+        Iterable<Region> regions = repo.findAll();
+        model.addAttribute("regions", regions);
 
         return "/s07/regions";
     }
