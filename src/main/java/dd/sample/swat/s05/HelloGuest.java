@@ -27,7 +27,7 @@ public class HelloGuest {
     public String guest2( //
             @RequestParam(required = false) String user, //
             Model model) {
-        if (user == null || user.isEmpty() || user.isBlank()) {
+        if (user == null || user.isBlank()) {
             LOG.debug("no name passed for user, using default instead");
             user = "Anonymous";
         }
